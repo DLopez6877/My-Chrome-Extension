@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "My Chrome Extension",
+  "version": "1.0",
+  "description": "Applies custom styles to specific websites",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://www.chess.com/*"],
+      "js": ["config.js", "content-script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["styles/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

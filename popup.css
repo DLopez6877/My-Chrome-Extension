@@ -1,0 +1,43 @@
+/* Place styles for the plugin menu here */
+
+body {
+  width: 200px;
+  padding: 16px;
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: #202124;
+  color: #c4c7c5;
+  border: 1px solid #ffffff1a;
+  overflow: hidden;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.checkbox-container:not(:last-child) {
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.checkbox-container:hover {
+  background-color: #3c3c3c;
+}
+
+.checkbox-container label {
+  margin-left: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  accent-color: rebeccapurple;
+}
